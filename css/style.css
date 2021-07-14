@@ -229,39 +229,6 @@ section.header-banner {
 
 /* Header Banner Style Ends Here */
 
-/* Extra Highlights Styles Starts Here*/
-
-section.copaamericafinal {
-    width: 82%;
-    margin: auto;
-    padding: 50px 0px 40px 0px;
-}
-
-.section-title {
-    padding: 20px 0;
-    text-align: center;
-}
-
-.section-title h3 {
-    font-size: 30px;
-    border-bottom: 1px dashed #E02C6D;
-    display: inline-block;
-    padding: 13px 0;
-    margin-bottom: 30px;
-}
-
-.video-player {
-    width: 70%;
-    margin: auto;
-}
-
-.video-player iframe {
-    width: 100%;
-    height: 400px;
-}
-
-/* Extra Highlights Styles Ends Here*/
-
 /* Players Grid Style Starts Here */
 
 section.player-grid{
@@ -307,6 +274,39 @@ section.player-grid.players-box {
     font-size: 27px;
 }
 /* Players Grid Style Ends Here */
+
+/* Extra Highlights Styles Starts Here*/
+
+section.copaamericafinal {
+    width: 82%;
+    margin: auto;
+    padding: 0 0 40px 0;
+}
+
+.section-title {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section-title h3 {
+    font-size: 30px;
+    border-bottom: 1px dashed #E02C6D;
+    display: inline-block;
+    padding: 13px 0;
+    margin-bottom: 30px;
+}
+
+.video-player {
+    width: 70%;
+    margin: auto;
+}
+
+.video-player iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/* Extra Highlights Styles Ends Here*/
 
 /* Highlights Style Starts Here */
 
