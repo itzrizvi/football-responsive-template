@@ -149,6 +149,7 @@ section.header-banner {
     transition: .5s;
     transform: scale(1);
     position: relative;
+    font-size: 16px;
 }
 
 .banner-left a::before{
