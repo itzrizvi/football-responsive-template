@@ -58,7 +58,7 @@ nav.navbar ul li:hover::before{
 nav.navbar ul li a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Poppins';
     padding: 9px 10px;
     transition: .5s;
@@ -347,6 +347,7 @@ section.copahighlights {
     transition: .5s;
     transform: scale(1);
     position: relative;
+    font-size: 16px;
 }
 
 .highlights-txt a::before{
@@ -439,6 +440,7 @@ section.call-to-action {
     margin-top: 7px;
     overflow: hidden;
     border: 1px solid transparent;
+    font-size: 16px;
 }
 
 .call-to-btn a:hover{
