@@ -1,0 +1,512 @@
+/* GLOBAL STYLES Starts Here */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* GLOBAL STYLES Ends Here */
+
+/******* Header Style Starts Here *******/
+
+header.head {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0px;
+    height: auto;
+    display: flex;
+    background-color: #2D25A0;
+}
+
+.menu {
+    width: 70%;
+    padding-left: 40px;
+}
+
+nav.navbar ul li {
+    display: inline-flex;
+    padding: 10px;
+    position: relative;
+}
+
+nav.navbar ul li::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #ffffff;
+    display: block;
+    width: 80%;
+    margin: auto;
+    bottom: -20px;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+
+}
+
+nav.navbar ul li:hover::before{
+    opacity: 1;
+    visibility: visible;
+    bottom: 10px;
+}
+
+nav.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Poppins';
+    padding: 9px 10px;
+    transition: .5s;
+}
+
+nav.navbar ul li a:hover{
+    color: #E02C6D;
+}
+
+.mobile-menu {
+    width: 70%;
+    padding: 10px 10px;
+    display: none;
+}
+
+span.bars {
+    margin-top: 9px;
+    display: block;
+}
+
+span.bars a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+
+.login-side {
+    width: 30%;
+    padding: 10px 0;
+}
+
+.login-side a {
+    margin-right: 75px;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    overflow: hidden;
+    word-spacing: 7px;
+    text-decoration: none;
+    padding: 8px 20px;
+    font-size: 15px;
+    float: right;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+
+.login-side a:hover{
+    word-spacing: 3px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+/* Header Style Ends Here */
+
+/* Header Banner Style Starts Here */
+section.header-banner {
+    width: 100%;
+    padding: 50px 0 95px 0;
+    margin: auto;
+    background-color: #2D25A0;
+}
+
+.header-banner-inner{
+    width: 90%;
+    margin: auto;
+    display: flex;
+} 
+
+.banner-left {
+    width: 50%;
+}
+
+.banner-left h1 {
+    font-family: 'Poppins';
+    font-size: 68px;
+    color: #FFFFFF;
+    padding-top: 50px;
+}
+
+.banner-left a {
+    background-color: #E02C6D;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    margin-top: 25px;
+    display: inline-block;
+    transition: .5s;
+    transform: scale(1);
+    position: relative;
+}
+
+.banner-left a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-top: 1px solid #ffffff;
+    top: -30px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.banner-left a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.banner-left a:hover{
+    transform: scale(1.05);
+    background-color: transparent;
+}
+.banner-left a:hover::before{
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.banner-left a:hover::after{
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.banner-right {
+    width: 50%;
+    padding-top: 5px;
+}
+
+.banner-player {
+    position: relative;
+}
+
+.banner-player .banner-shape-img{
+    width: 66%;
+    margin: auto;
+    display: block;
+}
+
+.banner-player img.banner-player-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 83%;
+    transition: 2s;
+    transform: scale(1);
+}
+
+.banner-player:hover > img.banner-player-img{
+    transform: scale(1.2, 1.2);
+    transition: transform 2s ease-out 0.1s;
+}
+
+/* Header Banner Style Ends Here */
+
+/* Extra Highlights Styles Starts Here*/
+
+section.copaamericafinal {
+    width: 82%;
+    margin: auto;
+    padding: 50px 0px 40px 0px;
+}
+
+.section-title {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section-title h3 {
+    font-size: 30px;
+    border-bottom: 1px dashed #E02C6D;
+    display: inline-block;
+    padding: 13px 0;
+    margin-bottom: 30px;
+}
+
+.video-player {
+    width: 70%;
+    margin: auto;
+}
+
+.video-player iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/* Extra Highlights Styles Ends Here*/
+
+/* Players Grid Style Starts Here */
+
+section.player-grid{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+section.player-grid.players-box {
+    padding: 50px 0px;
+}
+
+.single-player-box{
+    border: 1px solid transparent;
+    transition: .5s;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+}
+
+.single-player-box:hover {
+    border: 1px solid #E02C6D;
+}
+
+.single-player-box img{
+    width: 90%;
+    margin: auto;
+    display: block;
+    padding-top: 17px;
+}
+
+.single-player-box p{
+    font-size: 16px;
+    padding: 10px 15px 30px 15px;
+}
+.single-player-box h3{
+    padding: 10px 16px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 27px;
+}
+/* Players Grid Style Ends Here */
+
+/* Highlights Style Starts Here */
+
+section.copahighlights {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    padding: 50px 0px;
+}
+
+.highlights-txt {
+    width: 50%;
+}
+
+.highlights-img {
+    width: 50%;
+}
+
+.highlights-txt h1 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.highlights-txt p {
+    padding: 10px 71px 10px 0px;;
+    line-height: 32px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.highlights-txt a {
+    background-color: #E02C6D;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    display: inline-block;
+    transition: .5s;
+    transform: scale(1);
+    position: relative;
+}
+
+.highlights-txt a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-top: 1px solid #000000;
+    top: -30px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.highlights-txt a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.highlights-txt a:hover{
+    transform: scale(1.05);
+    background-color: transparent;
+    color: #000000;
+}
+.highlights-txt a:hover::before{
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.highlights-txt a:hover::after{
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.highlights-img img {
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+/* Highlights Style Ends Here */
+
+/* Call To Action Style Starts Here*/
+
+section.call-to-action {
+    width: 85%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    padding: 35px 20px;
+    display: flex;
+    border: 5px solid #E7E7E8;
+    border-left: 5px solid #E02C6D;
+}
+
+.call-to-txt {
+    width: 75%;
+}
+
+.call-to-txt h3 {
+    padding-bottom: 10px;
+}
+
+.call-to-btn {
+    width: 25%;
+}
+
+.call-to-btn a {
+    background-color: #E02C6D;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    transition: .5s;
+    transform: scale(1);
+    position: relative;
+    float: right;
+    margin-top: 7px;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.call-to-btn a:hover{
+    transform: scale(1.05);
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #E02C6D;
+}
+
+/* Call To Action Style Ends Here*/
+
+/* Footer Style Starts Here*/
+
+footer.foot {
+    padding: 50px 0px;
+    width: 100%;
+    margin: auto;
+}
+
+.footer-logo img {
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+.footer-icons {
+    width: 100%;
+    padding-top: 25px;
+}
+
+.footer-icons ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 8px;
+    font-size: 28px;
+}
+
+.footer-icons ul li a {
+    text-decoration: none;
+    color: #969BAB;
+    text-align: center;
+    display: inline-block;
+    background-color: #E7E7E8;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 25px;
+    padding: 10px;
+    line-height: 36px;
+    transition: .5s;
+}
+
+.footer-icons ul li a:hover{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+}
+
+.footer-icons ul {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.copyright p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Footer Style Ends Here*/
